@@ -3,6 +3,10 @@
 //   //  useNavigate
 //   useSearchParams,
 // } from "react-router-dom";
+// Production asset imports for Leaflet default markers in Vite
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import styles from "./Map.module.css";
 import {
   MapContainer,
@@ -12,6 +16,7 @@ import {
   useMap,
   useMapEvents,
 } from "react-leaflet";
+import L from "leaflet";
 import { useEffect, useState } from "react";
 import { useCities } from "../context/useCities";
 import { useGeolocation } from "../../../hooks/useGeolocation";
@@ -19,7 +24,14 @@ import Button from "../../../components/ui/Button";
 import Flag from "../../../components/ui/Flag";
 import { useUrlPosition } from "../../../hooks/useUrlPosition";
 import { useNavigate } from "react-router-dom";
+// Override Leaflet's internal image URL resolution for production builds
+delete L.Icon.Default.prototype._getIconUrl;
 
+L.Icon.Default.mergeOptions({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+});
 const Map = () => {
   const { cities } = useCities();
   // useUrlPosition returns a tuple [lat, lng]
