@@ -1,0 +1,76 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": 73930385
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": 17806751
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": 98443197
+    },
+    {
+      "cityName": "Onda",
+      "country": "Spain",
+      "date": "2026-09-11T22:12:22.464Z",
+      "emoji": "🇪🇸",
+      "notes": "tttt",
+      "position": {
+        "lat": "39.96252174658857",
+        "lng": "-0.23895263671875003"
+      },
+      "id": "fc38ffff-032a-43ed-bb8c-8fb81bc0231c"
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "date": "2026-10-04T19:09:09.254Z",
+      "emoji": "🇪🇸",
+      "notes": "",
+      "position": {
+        "lat": "40.018288534274284",
+        "lng": "-0.06900926670201814"
+      },
+      "id": "d770a678-8404-455a-8975-26833b9f5b00"
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "date": "2026-10-04T19:14:40.647Z",
+      "emoji": "🇪🇸",
+      "notes": "",
+      "position": {
+        "lat": "40.02012845090604",
+        "lng": "-0.05150217463646857"
+      },
+      "id": "b0fc2b23-e163-4a6c-aa0b-29824fa34f21"
+    }
+  ]
+}
